@@ -1,0 +1,1 @@
+print(len("*Z00010AnticipoRetribuzione                                      18,14690              126,00000ORE                                 2.286,51      "))
