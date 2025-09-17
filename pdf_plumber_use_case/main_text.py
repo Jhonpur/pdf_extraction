@@ -112,10 +112,10 @@ import pdfplumber
     for x_col in colonne:
         if abs(x - x_col) <= tolleranza:
             return x_col
-    return x"""
+    return x
 
 #loc = r"C:\Users\ange.kadjafomekon\OneDrive - AGM Solutions\Desktop\git_locale\pdf_extraction\Azienda 200 dip 03 - mese 01.2025.pdf"
-"""with pdfplumber.open(loc_3) as pdf:
+with pdfplumber.open(loc_3) as pdf:
     for i, page in enumerate(pdf.pages):
         words = page.extract_words()
         # Ordina tutte le parole prima per 'x0' (orizzontale), poi per 'top' (verticale)
@@ -132,7 +132,7 @@ import pdfplumber
         print("-" * 50)"""
 
 
-def trova_riga(y, righe, tolleranza=2):
+"""def trova_riga(y, righe, tolleranza=2):
     for y_riga in righe:
         if abs(y - y_riga) <= tolleranza:
             return y_riga
@@ -155,4 +155,4 @@ with pdfplumber.open(loc_3) as pdf:
             riga = [t for _, t in sorted(righe[y], key=lambda x: x[0])]
             print(' '.join(riga))
         print("-" * 50)
-        
+        """
