@@ -3,7 +3,7 @@
 import fitz  
 
 # Open a PDF file
-pdf_document_dip_3 = r"C:\Users\ange.kadjafomekon\OneDrive - AGM Solutions\Desktop\git_locale\pdf_extraction\Azienda 200 dip 03 - mese 01.2025.pdf"
+pdf_document_dip_3 = r"C:\Users\lorenzo.pourpour\OneDrive - AGM Solutions\Desktop\pdf_extraction\Azienda 200 dip 22 - mese 01.2025_clean_all.pdf"
 doc = fitz.open(pdf_document_dip_3)
 #________________________________--estrae pagina intere per pagina ___________________________________
 # Initialize an empty string to store extracted text
