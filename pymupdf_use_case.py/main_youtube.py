@@ -6,10 +6,10 @@ print(doc.metadata)
 
 print("========================================================================================================================================================")
 
-page_one = doc[0]
-
-find = page_one.find_tables()
-
-table1 = find.tables[0]
-
-print(table1.extract())
+for i in range(len(doc)):
+    page = doc[i]
+    find = page.find_tables()
+    for j,tab  in enumerate(find):
+        print(f"table{j}")
+        table1 = find.tables[j]
+        print(table1.extract())

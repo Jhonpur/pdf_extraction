@@ -30,7 +30,7 @@ for page_num in range(doc.page_count):
     text = page.get_text("text")  # "text" mode: restituisce il testo riga per riga
     for line in text.splitlines():
         if line.strip():  # esclude righe vuote
-            righe_estratte.append(line.strip())
+            righe_estratte.append(line.strip() )
 
 doc.close()
 
